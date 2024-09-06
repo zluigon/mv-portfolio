@@ -1,5 +1,4 @@
 (function () {
-	document.documentElement.classList.remove("no-js");
 	var storageKey = "theme-preference";
 
 	var getColorPreference = function () {
