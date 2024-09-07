@@ -1,8 +1,7 @@
 (function () {
-	document.documentElement.classList.remove("no-js");
-	var storageKey = "theme-preference";
+	let storageKey = "theme-preference";
 
-	var getColorPreference = function () {
+	const getColorPreference = function () {
 		if (localStorage.getItem(storageKey))
 			return localStorage.getItem(storageKey);
 		else
@@ -11,9 +10,9 @@
 				: "light";
 	};
 
-	var theme = { value: getColorPreference() };
+	let theme = { value: getColorPreference() };
 
-	var reflectPreference = function () {
+	const reflectPreference = function () {
 		document.documentElement.classList.remove("bg-light", "bg-dark");
 		document.documentElement.classList.add("bg-" + theme.value);
 		document
