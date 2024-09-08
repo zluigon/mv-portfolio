@@ -197,7 +197,7 @@ nav {
 	z-index: 5;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
 	text-decoration: underline;
 	opacity: 0.8;
 }
@@ -253,10 +253,10 @@ nav a:hover {
 
 /* Media Queries */
 @media (max-width: 780px) {
-	.ascii-art {
+	/* .ascii-art {
 		font-size: 5px;
 		line-height: 6px;
-	}
+	} */
 
 	.nav-links {
 		margin-top: 0;
@@ -282,6 +282,11 @@ nav a:hover {
 @media (max-width: 650px) {
 	.nav-links {
 		font-size: 14px;
+	}
+
+	.ascii-art {
+		font-size: 5px;
+		line-height: 6px;
 	}
 }
 
